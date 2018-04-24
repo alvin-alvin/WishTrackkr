@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">WishTrackrr</string>
+    <string name="username">Username</string>
+    <string name="sucessfullyLoggedIn">you\'re successfully logged in</string>
+    <string name="changeAccount">change account</string>
+
+
+    <!--FACEBOOK CREDENTIALS-->
+    <string name="facebook_app_id">XXXXXXXXXXXXXX</string>
+    <string name="fb_login_protocol_scheme">XXXXXXXXXXXXXX</string>
+
+    <!--GOOGLE CREDENTIALS-->
+    <string name="clientId">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</string>
+    <string name="clientSecret"></string>
+
+    <string name="googleAPIKey">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</string>
+    <string name="googleCX">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

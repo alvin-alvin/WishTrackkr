@@ -1,0 +1,109 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundGray"
+    android:clipToPadding="true"
+
+    tools:context="com.aclessdev.WishTrackkr.ProfileFragment">
+    
+
+    <RelativeLayout
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/background_home"
+        android:paddingBottom="32dp"
+        android:id="@+id/topProfileWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_marginTop="48dp"
+            android:layout_gravity="center"
+            android:src="@color/gray400"
+            android:layout_width="104dp"
+            android:layout_height="104dp" />
+        <TextView
+            android:id="@+id/profileUsername"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/username"
+            />
+
+        <TextView
+            android:id="@+id/profileBirthday"
+            android:alpha="0.7"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="June, 16th"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/profileSettingBtn"
+        android:layout_marginTop="-20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/topProfileWrapper"
+        android:background="@drawable/capsule_background"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingLeft="64dp"
+        android:paddingRight="64dp"
+
+        android:text="SETTING"
+        />
+
+
+    <TextView
+        android:padding="8dp"
+        android:background="@color/white"
+        android:id="@+id/txtMyWishlist"
+        android:text="My Wishlist"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/topProfileWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/rvList"
+        android:layout_below="@id/txtMyWishlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorSeparator"
+        android:layout_below="@id/txtMyWishlist"
+        />
+    </RelativeLayout>
+
+
+
+
+
+
+</android.support.v4.widget.NestedScrollView>

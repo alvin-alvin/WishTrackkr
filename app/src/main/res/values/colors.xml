@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#e0e0e0</color>
+    <color name="colorAccent">#424242</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray400">#bdbdbd</color>
+    <color name="black">#000000</color>
+    <color name="green">#00e676</color>
+    <color name="buttonColor">#00c853</color>
+    <color name="backgroundGray">#f5f5f5</color>
+    <color name="colorSeparator">#bdbdbd</color>
+    <color name="backgroundProfile">#20ff92</color>
+    <color name="merahBukalapak">#C30D40</color>
+</resources>
