@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 
-import com.aclessdev.WishTrackkr.authentication.LoginActivity;
+import com.aclessdev.WishTrackkr.authentication.SplashScreen;
 import com.aclessdev.WishTrackkr.shared.BaseActivity;
 import com.facebook.login.LoginManager;
 
@@ -39,7 +39,7 @@ public class SettingActivity extends BaseActivity {
             public void onClick(DialogInterface dialogInterface, int i) {
                 LoginManager.getInstance().logOut();
                 appPreference.setUserProfile(null);
-                Intent goLogout = new Intent(SettingActivity.this, LoginActivity.class);
+                Intent goLogout = new Intent(SettingActivity.this, SplashScreen.class);
                 startActivity(goLogout);
             }
         });

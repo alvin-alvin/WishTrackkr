@@ -40,25 +40,6 @@ public class ImageSearchWithGoogleActivity extends BaseActivity {
     @OnClick(R.id.searchImageButton)
     public void onClick() {
         String query = searchImageET.getText().toString();
-        Call<GoogleSearchResult> getResult = googleClient.getImageByQuery(query,getResources().getString(R.string.googleCX),"image",getResources().getString(R.string.googleAPIKey));
-        getResult.enqueue(new Callback<GoogleSearchResult>() {
-            @Override
-            public void onResponse(Call<GoogleSearchResult> call, Response<GoogleSearchResult> response) {
-                if (response.isSuccessful()) {
-                    if (response.body().getItems().size() > 0) {
 
-                        Glide.with(ImageSearchWithGoogleActivity.this).load(response.body().getItems().get(0).getLink()).into(testImage);
-                    }
-                } else {
-                    Toast.makeText(ImageSearchWithGoogleActivity.this, "Failed to load data", Toast.LENGTH_SHORT).show();
-                }
-            }
-
-            @Override
-            public void onFailure(Call<GoogleSearchResult> call, Throwable t) {
-                t.printStackTrace();
-                Toast.makeText(ImageSearchWithGoogleActivity.this, "Failed to load data", Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 }
